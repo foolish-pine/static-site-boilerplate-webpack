@@ -2,7 +2,7 @@
 - 静的サイト制作のためのボイラープレートです
 - Visual Studio CodeとそのプラグインおよびNode.jsを使用します
 - EJS、Dart Sass、JavaScriptの使用を想定しています
-- 必要に応じて拡張することができます
+- 各種設定は必要に応じて変更してください
 
 ## 動作確認環境
 Node.js v16.13.1
@@ -18,16 +18,16 @@ Node.js v16.13.1
 ## 設定ファイルについての説明
 ### .vscodeディレクトリ
 Visual Studio Codeの設定ファイルを格納するディレクトリ。  
-このディレクトリのファイルに記述した設定はプロジェクト内でのみ有効となる。個人の環境に応じて新規ファイルを追加してよい。
+このディレクトリのファイルに記述した設定はプロジェクト内でのみ有効となる。
 
 ### .vscode/extensions.json
 プロジェクトにおけるVisual Studio Codeの推奨プラグインを記述したファイル。
 
 ### .vscode/settings.json
-Visual Studio Codeの設定ファイル。個人の環境に応じて編集可。
+Visual Studio Codeの設定ファイル。
 
 ### .browserslistrc
-対応ブラウザを指定するファイル。プロジェクトに応じて編集可。
+対応ブラウザを指定するファイル。
 
 ### .editorconfig
 EditorConfigの設定ファイル。使用するルールについては後述。
@@ -36,7 +36,7 @@ EditorConfigの設定ファイル。使用するルールについては後述�
 ESlintの設定ファイル。使用するルールについては後述。
 
 ### .gitignore
-Gitの追跡対象にしないファイル・ディレクトリを記述する。必要に応じて追記可。  
+Gitの追跡対象にしないファイル・ディレクトリを記述する。  
 プロジェクトをGitで管理する場合、以下のファイル・ディレクトリは追跡対象としない。
 - `node_modules`
 - `.DS_Store`
@@ -54,10 +54,10 @@ JavaScriptの設定ファイル。`baseUrl`やパスのエイリアスの設定�
 プロジェクトで使用するパッケージを記載したファイル。
 
 ### README.md
-本ドキュメント。プロジェクトに応じて編集可。
+本ドキュメント。
 
 ### webpack.config.js
-webpackの設定ファイル。プロジェクトに応じて編集可。
+webpackの設定ファイル。
 
 ## コマンド
 - `start`  
@@ -66,8 +66,6 @@ webpackを起動し、開発用サーバーを立ち上げる。
 webpackの`production mode`でビルドする。
 - `build:dev`  
 webpackの`development mode`でビルドする。
-
-プロジェクトに応じて編集可。
 
 ## コーディングルール
 ### コーディング全般
@@ -83,8 +81,8 @@ webpackの`development mode`でビルドする。
 プロジェクトの要件に合わせて変更すること。その場合、必要に応じて`.browserslistrc`も更新すること。
 
 #### [EditorConfig](https://editorconfig.org/)のルール
-- `indent_style = tab` … インデントにタブを使用する。この選択は[WordPressのコーディング規約](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#indentation)に依る。プロジェクトの要件に合わせて変更してもよい
-- `indent_size = 2` … インデントサイズは2とする。プロジェクトの要件に合わせて変更してもよい
+- `indent_style = tab` … インデントにタブを使用する。この選択は[WordPressのコーディング規約](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#indentation)に依る。
+- `indent_size = 2` … インデントサイズは2とする
 - `end_of_line = lf` … 改行コードはLFとする
 - `charset = utf-8` … 文字コードはUTF-8とする
 - `trim_trailing_whitespace = true` … 文末のスペースを削除する。ただし、`.md`ファイルでは`false`
@@ -109,7 +107,7 @@ webpackの`development mode`でビルドする。
 
 ### CSS
 - 原則として、SCSSファイルをコンパイルして生成したCSSファイルを直接編集することは禁止する
-- リセットCSSは[html5doctor.com Reset Stylesheet](http://html5doctor.com/html-5-reset-stylesheet/)を使用する。必要に応じて変更可
+- リセットCSSは[html5doctor.com Reset Stylesheet](http://html5doctor.com/html-5-reset-stylesheet/)を使用する
 
 ### SCSS
 #### コンパイラ
@@ -117,7 +115,7 @@ webpackの`development mode`でビルドする。
 
 #### CSSプロセッサー
 - [PostCSS](https://github.com/postcss/postcss)を使用する
-- プラグインとして以下を使用する。必要に応じて変更可
+- プラグインとして以下を使用する
 	- [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
 	- [postcss-sort-media-queries](https://github.com/solversgroup/postcss-sort-media-queries)
 - プレフィックスの付与は`.browserslistrc`に基づく
@@ -185,17 +183,17 @@ $red: blue;
 
 ### JavaScript
 #### モジュールバンドラ
-- [webpack](https://webpack.js.org/)を使用する。設定は必要に応じて変更可
+- [webpack](https://webpack.js.org/)を使用する。
 
 #### トランスパイラ
 - [Babel](https://babeljs.io/)を使用する
-- プリセットとして[@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)を使用する。必要に応じて変更可
+- プリセットとして[@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)を使用する
 - ブラウザ対応は`.browserslistrc`に基づく
 
 #### リンター
 - [ESLint](https://eslint.org/)を使用する
 - ベースのルールとして[eslint:recommended](https://eslint.org/docs/rules/)を使用する
-- プラグインとして以下を使用する。必要に応じて変更可
+- プラグインとして以下を使用する
 	- [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md)
 	- [eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports)
 - 加えて、以下のルールを追加する。ルールの詳細は[こちら](https://eslint.org/docs/rules/)を参照すること
@@ -220,4 +218,4 @@ $red: blue;
 
 ### 画像
 #### 最適化
-- `image-webpack-loader`を使用する。設定は必要に応じて変更可。
+- `image-webpack-loader`を使用する
