@@ -127,7 +127,7 @@ webpackの`development mode`でビルドする。
 - ベースのルールとして[stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss)を使用する
 - 以下のルールを追加する
 
-["declaration-block-no-duplicate-properties": true](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)  
+[`"declaration-block-no-duplicate-properties": true`](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)  
 プロパティの重複を許容しない。
 ```
 // 以下は許容されない
@@ -137,7 +137,7 @@ a {
 }
 ```
 
-["declaration-block-no-redundant-longhand-properties": null](https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/)  
+[`"declaration-block-no-redundant-longhand-properties": null`](https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/)  
 プロパティのロングハンド指定を許容する。
 ```
 // 以下は許容される
@@ -149,25 +149,25 @@ a {
 }
 ```
 
-["keyframes-name-pattern": null](https://stylelint.io/user-guide/rules/list/keyframes-name-pattern/)  
+[`"keyframes-name-pattern": null`](https://stylelint.io/user-guide/rules/list/keyframes-name-pattern/)  
 keyframeの命名パターンを制限しない。
 
-["selector-class-pattern": null](https://stylelint.io/user-guide/rules/list/selector-class-pattern/)  
+[`"selector-class-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-class-pattern/)  
 classセレクタの命名パターンを制限しない。
 
-["selector-id-pattern": null](https://stylelint.io/user-guide/rules/list/selector-id-pattern/)  
+[`"selector-id-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-id-pattern/)  
 idセレクタの命名パターンを制限しない。
 
-["scss/at-function-pattern": null](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern)  
+[`"scss/at-function-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern)  
 functionの命名パターンを制限しない。
 
-["scss/at-mixin-pattern": null](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-mixin-pattern)  
+[`"scss/at-mixin-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-mixin-pattern)  
 mixinの命名パターンを制限しない。
 
-["scss/dollar-variable-pattern": null](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-pattern)  
+[`"scss/dollar-variable-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-pattern)  
 変数の命名パターンを制限しない。
 
-["scss/no-duplicate-dollar-variables": true](https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables)  
+[`"scss/no-duplicate-dollar-variables": true`](https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables)  
 変数宣言の重複を許容しない。
 ```
 // 以下は許容されない
@@ -175,7 +175,7 @@ $red: red;
 $red: blue;
 ```
 
-["scss/percent-placeholder-pattern": null](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/percent-placeholder-pattern)  
+[`"scss/percent-placeholder-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/percent-placeholder-pattern)  
 `%`-placeholderの命名パターンを制限しない。
 
 #### フォーマッター
@@ -201,19 +201,19 @@ $red: blue;
 - 加えて、以下のルールを追加する。ルールの詳細は[こちら](https://eslint.org/docs/rules/)を参照すること
 
 `"no-alert""warn"`  
-`alert`, `confirm`, `prompt`が使用されていたら警告する
+`alert`, `confirm`, `prompt`が使用されていたら警告する。
 
 `"no-console""warn"`  
-`console`が使用されていたら警告する
+`console`が使用されていたら警告する。
 
 `"no-unused-vars": "warn"`  
-未使用の変数があれば警告する
+未使用の変数があれば警告する。
 
 `"no-var": "warn"`  
-`var`が使用されていたら警告する
+`var`が使用されていたら警告する。
 
 `"eqeqeq": "warn"`  
-`==`または`!=`が使用されていたら警告する
+`==`または`!=`が使用されていたら警告する。
 
 #### フォーマッター
 - [Prettier](https://prettier.io/)を使用する
