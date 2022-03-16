@@ -27,7 +27,7 @@ Visual Studio Codeの設定ファイルを格納するディレクトリ。
 Visual Studio Codeの設定ファイル。個人の環境に応じて編集可。
 
 ### .browserslistrc
-対応するブラウザを指定するファイル。プロジェクトに応じて編集可。
+対応ブラウザを指定するファイル。プロジェクトに応じて編集可。
 
 ### .editorconfig
 EditorConfigの設定ファイル。使用するルールについては後述。
