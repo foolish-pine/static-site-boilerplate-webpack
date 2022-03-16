@@ -195,12 +195,25 @@ $red: blue;
 #### リンター
 - [ESLint](https://eslint.org/)を使用する
 - ベースのルールとして[eslint:recommended](https://eslint.org/docs/rules/)を使用する
+- プラグインとして以下を使用する。必要に応じて変更可
+	- [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md)
+	- [eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports)
 - 加えて、以下のルールを追加する。ルールの詳細は[こちら](https://eslint.org/docs/rules/)を参照すること
-	- `"no-alert": "warn"` … `alert`, `confirm`, `prompt`が使用されていたら警告する
-	- `"no-console": "warn"` … `console`が使用されていたら警告する
-	- `"no-unused-vars": "warn"` … 未使用の変数があれば警告する
-	- `"no-var": "warn"` … `var`が使用されていたら警告する
-	- `"eqeqeq": "warn"` … `==`または`!=`が使用されていたら警告する
+
+`"no-alert""warn"`  
+`alert`, `confirm`, `prompt`が使用されていたら警告する
+
+`"no-console""warn"`  
+`console`が使用されていたら警告する
+
+`"no-unused-vars": "warn"`  
+未使用の変数があれば警告する
+
+`"no-var": "warn"`  
+`var`が使用されていたら警告する
+
+`"eqeqeq": "warn"`  
+`==`または`!=`が使用されていたら警告する
 
 #### フォーマッター
 - [Prettier](https://prettier.io/)を使用する
