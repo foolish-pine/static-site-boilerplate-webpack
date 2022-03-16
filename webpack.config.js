@@ -1,4 +1,5 @@
 const path = require("path");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -104,7 +105,9 @@ module.exports = {
 		],
 	},
 	resolve: {
-		modules: [path.resolve("."), path.resolve("node_modules")],
+		alias: {
+			"@": path.resolve(__dirname, "src"),
+		},
 	},
 	plugins: [
 		new HtmlWebpackPlugin({

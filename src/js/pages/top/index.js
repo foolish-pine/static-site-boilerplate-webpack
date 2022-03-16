@@ -1,6 +1,6 @@
-import "src/css/vendor/reset/html5reset-1.6.1.css";
-import "src/scss/pages/top/style.scss";
+import "@/css/vendor/reset/html5reset-1.6.1.css";
+import "@/scss/pages/about/style.scss";
 
-import { hello } from "src/js/components/hello";
+import { hello } from "@/js/components/hello";
 
 hello();
