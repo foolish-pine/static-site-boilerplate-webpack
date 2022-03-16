@@ -1,0 +1,10 @@
+/* ----------------------------------
+	Aboutページ
+------------------------------------ */
+@use "src/scss/global";
+
+h1 {
+	display: grid;
+	font-size: 30px;
+	color: global.$c_black;
+}
