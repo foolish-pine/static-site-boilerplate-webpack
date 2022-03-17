@@ -2,6 +2,7 @@
 - 静的サイト制作のためのボイラープレートです
 - Visual Studio CodeとそのプラグインおよびNode.jsを使用します
 - EJS、Dart Sass、JavaScriptの使用を想定しています
+- モジュールバンドラとしてwebpackを使用します
 - 各種設定は必要に応じて変更してください
 
 ## 動作確認環境
@@ -11,52 +12,52 @@ Node.js v16.13.1
 1. zip形式で本レポジトリをダウンロードする
 2. zipファイルを解凍し、フォルダ名を任意のプロジェクト名に変更する
 3. プロジェクトのディレクトリに移動し、`npm i`コマンドを実行してパッケージをインストールする
-4. [必要なVisual Studio Codeプラグイン](https://github.com/foolish-pine/webpack-boilerplate#visual-studio-code%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)をインストール・有効化する
+4. [必要なVisual Studio Codeプラグイン](#visual-studio-code%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)をインストール・有効化する
 5. 必要に応じて、README.mdや各種設定ファイルを編集する
 6. コーディングを開始する
 
 ## 設定ファイルについての説明
-### .vscodeディレクトリ
+- .vscodeディレクトリ  
 Visual Studio Codeの設定ファイルを格納するディレクトリ。  
 このディレクトリのファイルに記述した設定はプロジェクト内でのみ有効となる。
 
-### .vscode/extensions.json
+- .vscode/extensions.json  
 プロジェクトにおけるVisual Studio Codeの推奨プラグインを記述したファイル。
 
-### .vscode/settings.json
+- .vscode/settings.json  
 Visual Studio Codeの設定ファイル。
 
-### .browserslistrc
+- .browserslistrc  
 対応ブラウザを指定するファイル。
 
-### .editorconfig
+- .editorconfig  
 EditorConfigの設定ファイル。使用するルールについては後述。
 
-### .eslintrc.json
+- .eslintrc.json  
 ESlintの設定ファイル。使用するルールについては後述。
 
-### .gitignore
+- .gitignore  
 Gitの追跡対象にしないファイル・ディレクトリを記述する。  
 プロジェクトをGitで管理する場合、以下のファイル・ディレクトリは追跡対象としない。
-- `node_modules`
-- `.DS_Store`
+	- `node_modules`
+	- `.DS_Store`
 
-### .stylelintrc.json
+- .stylelintrc.json  
 stylelintの設定ファイル。使用するルールについては後述。
 
-### jsconfig.json
+- jsconfig.json  
 JavaScriptの設定ファイル。`baseUrl`やパスのエイリアスの設定に使用。
 
-### package-lock.json
+- package-lock.json  
 使用するパッケージのバージョンを固定するためのファイル。
 
-### package.json
+- package.json  
 プロジェクトで使用するパッケージを記載したファイル。
 
-### README.md
+- README.md  
 本ドキュメント。
 
-### webpack.config.js
+- webpack.config.js  
 webpackの設定ファイル。
 
 ## コマンド
@@ -218,4 +219,4 @@ $red: blue;
 
 ### 画像
 #### 最適化
-- `image-webpack-loader`を使用する
+- [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)を使用する
