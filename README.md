@@ -63,8 +63,10 @@ webpackの設定ファイル。
 ## コマンド
 - `start`  
 webpackを起動し、開発用サーバーを立ち上げる。
+
 - `build`  
 webpackの`production mode`でビルドする。
+
 - `build:dev`  
 webpackの`development mode`でビルドする。
 
