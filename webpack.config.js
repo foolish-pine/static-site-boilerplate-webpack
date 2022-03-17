@@ -1,5 +1,6 @@
 const path = require("path");
 
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -12,12 +13,11 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, "./dist"),
-		filename: "./assets/js/[name]-[contenthash].bundle.js",
-		clean: true,
+		filename: "assets/js/[name].bundle.js",
 	},
 	devServer: {
 		open: true,
-		watchFiles: ["src/**/*.ejs"],
+		watchFiles: ["./src/**/*.ejs"],
 	},
 	module: {
 		rules: [
@@ -77,7 +77,7 @@ module.exports = {
 				test: /\.(gif|png|jpe?g|svg|ico)$/i,
 				type: "asset/resource",
 				generator: {
-					filename: "assets/img/[name]-[contenthash][ext]",
+					filename: "assets/img/[name][ext]",
 				},
 				use: [
 					{
@@ -123,7 +123,8 @@ module.exports = {
 			inject: "body",
 		}),
 		new MiniCssExtractPlugin({
-			filename: "./assets/css/[name].css",
+			filename: "./assets/css/[name].bundle.css",
 		}),
+		new CleanWebpackPlugin(),
 	],
 };

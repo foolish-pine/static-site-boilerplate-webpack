@@ -1,1 +1,0 @@
-{"version":3,"file":"./assets/js/top-27fe5351cb1ace444877.bundle.js","mappings":"mBACCA,QAAQC,IAAI,W","sources":["webpack://webpack-boilerplate/./src/js/components/hello.js"],"sourcesContent":["export const hello = () => {\n\tconsole.log(\"Hello!\");\n};\n"],"names":["console","log"],"sourceRoot":""}

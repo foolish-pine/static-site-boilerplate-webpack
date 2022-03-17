@@ -1,8 +1,7 @@
 /* ----------------------------------
 	ベース
 ------------------------------------ */
-@use "color";
-@use "font";
+@use "src/scss/global";
 
 html {
 	box-sizing: border-box;
@@ -18,10 +17,10 @@ html {
 }
 
 body {
-	font-family: font.$f_yu-go, sans-serif;
+	font-family: global.$f_yu-go, sans-serif;
 	font-size: 1.6rem; // 16px
 	line-height: 1;
-	color: color.$c_black;
+	color: global.$c_black;
 }
 
 main {
