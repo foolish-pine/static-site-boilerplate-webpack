@@ -1,2 +1,2 @@
-import "@/css/vendor/reset/html5reset-1.6.1.css";
+import "destyle.css";
 import "@/scss/pages/about/style.scss";
