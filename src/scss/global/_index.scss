@@ -1,2 +1,7 @@
-@forward "variables/color";
-@forward "variables/font";
+/* ----------------------------------
+	global
+------------------------------------ */
+@forward "@/scss/global/functions/rem";
+@forward "@/scss/global/mixin/mediaquery";
+@forward "@/scss/global/variables/color";
+@forward "@/scss/global/variables/font";

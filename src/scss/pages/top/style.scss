@@ -1,6 +1,7 @@
 /* ----------------------------------
 	トップページ
 ------------------------------------ */
-@use "src/scss/base/base";
-@use "src/scss/global";
-@use "block/block";
+@use "@/scss/base/base";
+@use "@/scss/utilities";
+@use "@/scss/layout/global-layout";
+@use "@/scss/pages/top/block/sample-block";

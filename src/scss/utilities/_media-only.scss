@@ -1,0 +1,20 @@
+/* ----------------------------------
+	画面幅に応じた表示・非表示用スタイル
+------------------------------------ */
+@use "@/scss/global";
+
+.sp-only {
+	display: none;
+
+	@include global.mq_max_md {
+		display: block;
+	}
+}
+
+.pc-only {
+	display: block;
+
+	@include global.mq_max_md {
+		display: none;
+	}
+}
