@@ -1,12 +1,12 @@
 /* ----------------------------------
 	画面幅に応じた表示・非表示用スタイル
 ------------------------------------ */
-@use "@/scss/global";
+@use "@/scss/global" as *;
 
 .u-mobile-only {
 	display: none;
 
-	@include global.mq_max_md {
+	@include mq_max_md {
 		display: block;
 	}
 }
@@ -14,7 +14,7 @@
 .u-desktop-only {
 	display: block;
 
-	@include global.mq_max_md {
+	@include mq_max_md {
 		display: none;
 	}
 }

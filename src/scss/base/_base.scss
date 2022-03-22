@@ -1,7 +1,7 @@
 /* ----------------------------------
 	ベース
 ------------------------------------ */
-@use "@/scss/global";
+@use "@/scss/global" as *;
 
 html {
 	overflow-x: hidden;
@@ -9,10 +9,10 @@ html {
 }
 
 body {
-	font-family: global.$f_yu-go, sans-serif;
-	font-size: global.rem(16); // 16px
+	font-family: $f_yu-go, sans-serif;
+	font-size: rem(16); // 16px
 	line-height: 1;
-	color: global.$c_black;
+	color: $c_black;
 	overflow-wrap: break-word;
 }
 

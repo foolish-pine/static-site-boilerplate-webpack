@@ -1,10 +1,10 @@
 /* ----------------------------------
 	トップページ/サンプルブロック
 ------------------------------------ */
-@use "@/scss/global";
+@use "@/scss/global" as *;
 
 h1 {
-	color: global.$c_black;
+	color: $c_black;
 }
 
 .b-sample-block {
@@ -12,13 +12,13 @@ h1 {
 }
 
 .b-custom-max-mediaquery-test {
-	@include global.mq_max_custom(800px) {
+	@include mq_max_custom(800px) {
 		display: none;
 	}
 }
 
 .b-custom-min-mediaquery-test {
-	@include global.mq_min_custom(800px) {
+	@include mq_min_custom(800px) {
 		display: none;
 	}
 }
