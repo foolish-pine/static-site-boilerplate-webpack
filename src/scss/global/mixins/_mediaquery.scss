@@ -38,6 +38,13 @@ $breakPoint_sm: 575px;
 	}
 }
 
+// カスタムmax-widthメディアクエリ
+@mixin mq_max_custom($breakPoint) {
+	@media (max-width: $breakPoint) {
+		@content;
+	}
+}
+
 // min-width
 @mixin mq_min_sm {
 	@media (min-width: $breakPoint_sm + 1) {
@@ -65,6 +72,13 @@ $breakPoint_sm: 575px;
 
 @mixin mq_min_xxl {
 	@media (min-width: $breakPoint_xxl + 1) {
+		@content;
+	}
+}
+
+// カスタムmin-widthメディアクエリ
+@mixin mq_min_custom($breakPoint) {
+	@media (min-width: $breakPoint) {
 		@content;
 	}
 }

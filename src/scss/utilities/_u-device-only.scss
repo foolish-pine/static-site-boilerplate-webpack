@@ -3,7 +3,7 @@
 ------------------------------------ */
 @use "@/scss/global";
 
-.sp-only {
+.u-mobile-only {
 	display: none;
 
 	@include global.mq_max_md {
@@ -11,7 +11,7 @@
 	}
 }
 
-.pc-only {
+.u-desktop-only {
 	display: block;
 
 	@include global.mq_max_md {

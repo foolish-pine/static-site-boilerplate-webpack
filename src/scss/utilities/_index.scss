@@ -1,5 +1,5 @@
 /* ----------------------------------
-	utilities
+	ユーティリティ
 ------------------------------------ */
-@forward "@/scss/utilities/hover";
-@forward "@/scss/utilities/media-only";
+@forward "@/scss/utilities/u-device-only";
+@forward "@/scss/utilities/u-hover-style";
