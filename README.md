@@ -17,57 +17,57 @@ Node.js v16.13.1
 6. コーディングを開始する
 
 ## 設定ファイルについての説明
-- .vscodeディレクトリ  
-Visual Studio Codeの設定ファイルを格納するディレクトリ。  
+- .vscodeディレクトリ
+Visual Studio Codeの設定ファイルを格納するディレクトリ。
 このディレクトリのファイルに記述した設定はプロジェクト内でのみ有効となる。
 
-- .vscode/extensions.json  
+- .vscode/extensions.json
 プロジェクトにおけるVisual Studio Codeの推奨プラグインを記述したファイル。
 
-- .vscode/settings.json  
+- .vscode/settings.json
 Visual Studio Codeの設定ファイル。
 
-- .browserslistrc  
+- .browserslistrc
 対応ブラウザを指定するファイル。
 
-- .editorconfig  
+- .editorconfig
 EditorConfigの設定ファイル。使用するルールについては後述。
 
-- .eslintrc.json  
+- .eslintrc.json
 ESlintの設定ファイル。使用するルールについては後述。
 
-- .gitignore  
-Gitの追跡対象にしないファイル・ディレクトリを記述する。  
+- .gitignore
+Gitの追跡対象にしないファイル・ディレクトリを記述する。
 プロジェクトをGitで管理する場合、以下のファイル・ディレクトリは追跡対象としない。
 	- `node_modules`
 	- `.DS_Store`
 
-- .stylelintrc.json  
+- .stylelintrc.json
 stylelintの設定ファイル。使用するルールについては後述。
 
-- jsconfig.json  
+- jsconfig.json
 JavaScriptの設定ファイル。`baseUrl`やパスのエイリアスの設定に使用。
 
-- package-lock.json  
+- package-lock.json
 使用するパッケージのバージョンを固定するためのファイル。
 
-- package.json  
+- package.json
 プロジェクトで使用するパッケージを記載したファイル。
 
-- README.md  
+- README.md
 本ドキュメント。
 
-- webpack.config.js  
+- webpack.config.js
 webpackの設定ファイル。
 
 ## コマンド
-- `start`  
+- `start`
 webpackを起動し、開発用サーバーを立ち上げる。
 
-- `build`  
+- `build`
 webpackの`production mode`でビルドする。
 
-- `build:dev`  
+- `build:dev`
 webpackの`development mode`でビルドする。
 
 ## コーディングルール
@@ -92,7 +92,7 @@ webpackの`development mode`でビルドする。
 - `insert_final_newline = true` … ファイルの最終行に空行を挿入する
 
 #### コメント
-必要に応じてコメントを挿入する。  
+必要に応じてコメントを挿入する。
 ただし、不要なコメントは削除する。なんらかの理由でコメントアウトしたコードを残す場合は、その理由もコメントで残しておく。
 
 #### Visual Studio Codeプラグイン
@@ -110,7 +110,7 @@ webpackの`development mode`でビルドする。
 
 ### CSS
 - 原則として、SCSSファイルをコンパイルして生成したCSSファイルを直接編集することは禁止する
-- リセットCSSは[html5doctor.com Reset Stylesheet](http://html5doctor.com/html-5-reset-stylesheet/)を使用する
+- リセットCSSは[destyle.css](https://github.com/nicolas-cusan/destyle.css)を使用する
 
 ### SCSS
 #### コンパイラ
@@ -128,7 +128,7 @@ webpackの`development mode`でビルドする。
 - ベースのルールとして[stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss)を使用する
 - 以下のルールを追加する
 
-[`"declaration-block-no-duplicate-properties": true`](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)  
+[`"declaration-block-no-duplicate-properties": true`](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)
 プロパティの重複を許容しない。
 ```
 // 以下は許容されない
@@ -138,7 +138,7 @@ a {
 }
 ```
 
-[`"declaration-block-no-redundant-longhand-properties": null`](https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/)  
+[`"declaration-block-no-redundant-longhand-properties": null`](https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/)
 プロパティのロングハンド指定を許容する。
 ```
 // 以下は許容される
@@ -150,25 +150,25 @@ a {
 }
 ```
 
-[`"keyframes-name-pattern": null`](https://stylelint.io/user-guide/rules/list/keyframes-name-pattern/)  
+[`"keyframes-name-pattern": null`](https://stylelint.io/user-guide/rules/list/keyframes-name-pattern/)
 keyframeの命名パターンを制限しない。
 
-[`"selector-class-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-class-pattern/)  
+[`"selector-class-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-class-pattern/)
 classセレクタの命名パターンを制限しない。
 
-[`"selector-id-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-id-pattern/)  
+[`"selector-id-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-id-pattern/)
 idセレクタの命名パターンを制限しない。
 
-[`"scss/at-function-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern)  
+[`"scss/at-function-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern)
 functionの命名パターンを制限しない。
 
-[`"scss/at-mixin-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-mixin-pattern)  
+[`"scss/at-mixin-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-mixin-pattern)
 mixinの命名パターンを制限しない。
 
-[`"scss/dollar-variable-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-pattern)  
+[`"scss/dollar-variable-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-pattern)
 変数の命名パターンを制限しない。
 
-[`"scss/no-duplicate-dollar-variables": true`](https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables)  
+[`"scss/no-duplicate-dollar-variables": true`](https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables)
 変数宣言の重複を許容しない。
 ```
 // 以下は許容されない
@@ -176,7 +176,7 @@ $red: red;
 $red: blue;
 ```
 
-[`"scss/percent-placeholder-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/percent-placeholder-pattern)  
+[`"scss/percent-placeholder-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/percent-placeholder-pattern)
 `%`-placeholderの命名パターンを制限しない。
 
 #### フォーマッター
@@ -201,19 +201,19 @@ $red: blue;
 	- [eslint-plugin-unused-imports](https://github.com/sweepline/eslint-plugin-unused-imports)
 - 加えて、以下のルールを追加する。ルールの詳細は[こちら](https://eslint.org/docs/rules/)を参照すること
 
-`"no-alert""warn"`  
+`"no-alert""warn"`
 `alert`, `confirm`, `prompt`が使用されていたら警告する。
 
-`"no-console""warn"`  
+`"no-console""warn"`
 `console`が使用されていたら警告する。
 
-`"no-unused-vars": "warn"`  
+`"no-unused-vars": "warn"`
 未使用の変数があれば警告する。
 
-`"no-var": "warn"`  
+`"no-var": "warn"`
 `var`が使用されていたら警告する。
 
-`"eqeqeq": "warn"`  
+`"eqeqeq": "warn"`
 `==`または`!=`が使用されていたら警告する。
 
 #### フォーマッター
