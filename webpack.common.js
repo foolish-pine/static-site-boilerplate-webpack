@@ -1,12 +1,9 @@
 const path = require("path");
 
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-	mode: "development",
-	devtool: "source-map",
 	entry: {
 		top: "./src/js/pages/top/index.js",
 		about: "./src/js/pages/about/index.js",
@@ -14,10 +11,6 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "./dist"),
 		filename: "assets/js/[name].bundle.js",
-	},
-	devServer: {
-		open: true,
-		watchFiles: ["./src/**/*.ejs"],
 	},
 	module: {
 		rules: [
@@ -125,6 +118,5 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "./assets/css/[name].bundle.css",
 		}),
-		new CleanWebpackPlugin(),
 	],
 };
