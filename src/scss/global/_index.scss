@@ -1,7 +1,8 @@
 /* ----------------------------------
-	グローバル
+	index
+	globalディレクトリのファイルを@forwardしてまとめる
 ------------------------------------ */
 @forward "@/scss/global/functions/rem";
 @forward "@/scss/global/mixins/mediaquery";
 @forward "@/scss/global/variables/color";
-@forward "@/scss/global/variables/font";
+@forward "@/scss/global/variables/font-family";
