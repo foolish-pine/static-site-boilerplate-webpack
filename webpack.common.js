@@ -1,5 +1,6 @@
 const path = require("path");
 
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -101,6 +102,9 @@ module.exports = {
 		alias: {
 			"@": path.resolve(__dirname, "src"),
 		},
+	},
+	optimization: {
+		minimizer: [`...`, new CssMinimizerPlugin()],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
