@@ -110,7 +110,12 @@ webpackの`development mode`でビルドする。
 
 ### CSS
 - 原則として、SCSSファイルをコンパイルして生成したCSSファイルを直接編集することは禁止する
-- リセットCSSは[destyle.css](https://github.com/nicolas-cusan/destyle.css)を使用する
+
+#### リセットCSS
+- [destyle.css](https://github.com/nicolas-cusan/destyle.css)を使用する
+
+#### Minify
+- [css-minimizer-webpack-plugin](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/)を使用する
 
 ### SCSS
 #### コンパイラ
