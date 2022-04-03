@@ -83,3 +83,10 @@ $breakPoint_sm: 575px;
 		@content;
 	}
 }
+
+// hover動作が使えるかつ、ポインターがマウスポインターのデバイスのみを指定するメディアクエリ
+@mixin mq_hover {
+	@media (hover: hover) and (pointer: fine) {
+		@content;
+	}
+}

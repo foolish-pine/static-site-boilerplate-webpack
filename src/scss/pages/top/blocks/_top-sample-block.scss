@@ -5,6 +5,12 @@
 
 h1 {
 	color: $c_black;
+
+	@include mq_hover {
+		&:hover {
+			color: red;
+		}
+	}
 }
 
 .top-sample-block {
