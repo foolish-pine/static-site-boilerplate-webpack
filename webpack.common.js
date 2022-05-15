@@ -17,6 +17,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.js$/,
+				include: path.resolve(__dirname, "src"),
 				use: [
 					{
 						loader: "babel-loader",
@@ -28,6 +29,7 @@ module.exports = {
 			},
 			{
 				test: /\.ejs$/,
+				include: path.resolve(__dirname, "src"),
 				use: [
 					{
 						loader: "html-loader",
@@ -38,37 +40,8 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(scss|sass|css)$/,
-				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-					},
-					{
-						loader: "css-loader",
-					},
-					{
-						loader: "postcss-loader",
-						options: {
-							postcssOptions: {
-								plugins: [
-									[
-										"postcss-preset-env",
-										{
-											autoprefixer: { grid: true },
-										},
-									],
-									["postcss-sort-media-queries"],
-								],
-							},
-						},
-					},
-					{
-						loader: "sass-loader",
-					},
-				],
-			},
-			{
 				test: /\.(gif|png|jpe?g|svg|ico)$/i,
+				include: path.resolve(__dirname, "src"),
 				type: "asset/resource",
 				generator: {
 					filename: "assets/img/[name][ext]",
