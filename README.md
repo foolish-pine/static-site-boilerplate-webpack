@@ -17,58 +17,58 @@ Node.js v16.13.1
 6. コーディングを開始する
 
 ## 設定ファイルについての説明
-- .vscodeディレクトリ
+- .vscodeディレクトリ  
 Visual Studio Codeの設定ファイルを格納するディレクトリ。
 このディレクトリのファイルに記述した設定はプロジェクト内でのみ有効となる。
 
-- .vscode/extensions.json
+- .vscode/extensions.json  
 プロジェクトにおけるVisual Studio Codeの推奨プラグインを記述したファイル。
 
-- .vscode/settings.json
+- .vscode/settings.json  
 Visual Studio Codeの設定ファイル。
 
-- .browserslistrc
+- .browserslistrc  
 対応ブラウザを指定するファイル。
 
-- .editorconfig
+- .editorconfig  
 EditorConfigの設定ファイル。使用するルールについては後述。
 
-- .eslintrc.json
+- .eslintrc.json  
 ESlintの設定ファイル。使用するルールについては後述。
 
-- .gitignore
+- .gitignore  
 Gitの追跡対象にしないファイル・ディレクトリを記述する。
 プロジェクトをGitで管理する場合、以下のファイル・ディレクトリは追跡対象としない。
 	- `node_modules`
 	- `.DS_Store`
 	- `dist`
 
-- .stylelintrc.json
+- .stylelintrc.json  
 stylelintの設定ファイル。使用するルールについては後述。
 
-- jsconfig.json
+- jsconfig.json  
 JavaScriptの設定ファイル。`baseUrl`やパスのエイリアスの設定に使用。
 
-- package-lock.json
+- package-lock.json  
 使用するパッケージのバージョンを固定するためのファイル。
 
-- package.json
+- package.json  
 プロジェクトで使用するパッケージを記載したファイル。
 
-- README.md
+- README.md  
 本ドキュメント。
 
-- webpack.config.js
+- webpack.config.js  
 webpackの設定ファイル。
 
 ## コマンド
-- `start`
+- `start`  
 webpackを起動し、開発用サーバーを立ち上げる。
 
-- `build`
+- `build`  
 webpackの`production mode`でビルドする。
 
-- `build:dev`
+- `build:dev`  
 webpackの`development mode`でビルドする。
 
 ## コーディングルール
@@ -85,12 +85,18 @@ webpackの`development mode`でビルドする。
 プロジェクトの要件に合わせて変更すること。その場合、必要に応じて`.browserslistrc`も更新すること。
 
 #### [EditorConfig](https://editorconfig.org/)のルール
-- `indent_style = tab` … インデントにタブを使用する。この選択は[WordPressのコーディング規約](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#indentation)に依る。
-- `indent_size = 2` … インデントサイズは2とする
-- `end_of_line = lf` … 改行コードはLFとする
-- `charset = utf-8` … 文字コードはUTF-8とする
-- `trim_trailing_whitespace = true` … 文末のスペースを削除する。ただし、`.md`ファイルでは`false`
-- `insert_final_newline = true` … ファイルの最終行に空行を挿入する
+- `indent_style = tab`  
+インデントにタブを使用する。この選択は[WordPressのコーディング規約](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/#indentation)に依る。
+- `indent_size = 2`  
+インデントサイズは2とする
+- `end_of_line = lf`  
+改行コードはLFとする
+- `charset = utf-8`  
+文字コードはUTF-8とする
+- `trim_trailing_whitespace = true`  
+文末のスペースを削除する。ただし、`.md`ファイルでは`false`
+- `insert_final_newline = true`  
+ファイルの最終行に空行を挿入する
 
 #### コメント
 必要に応じてコメントを挿入する。
