@@ -141,6 +141,16 @@ webpackの`development mode`でビルドする。
 - ベースのルールとして[stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss)を使用する
 - 以下のルールを追加する
 
+[`"at-rule-empty-line-before": always`](https://stylelint.io/user-guide/rules/list/at-rule-empty-line-before/)  
+at-rulesの前に必ず空行を挿入する。
+```
+// 以下は許容されない
+a {} @media {}
+
+a {}
+@media {}
+```
+
 [`"declaration-block-no-duplicate-properties": true`](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)
 プロパティの重複を許容しない。
 ```
