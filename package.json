@@ -44,5 +44,8 @@
 	},
 	"dependencies": {
 		"destyle.css": "^3.0.2"
+	},
+	"volta": {
+		"node": "16.17.0"
 	}
 }
