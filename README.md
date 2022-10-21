@@ -6,7 +6,7 @@
 - 各種設定は必要に応じて変更してください
 
 ## 動作確認環境
-- Node.js v16.17.0  
+- Node.js v16.18.0  
 Node.jsのバージョン管理には[Volta](https://volta.sh/)を使用する。
 
 ## 使い方
@@ -151,7 +151,7 @@ a {}
 @media {}
 ```
 
-[`"declaration-block-no-duplicate-properties": true`](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)
+[`"declaration-block-no-duplicate-properties": true`](https://stylelint.io/user-guide/rules/list/declaration-block-no-duplicate-properties/)  
 プロパティの重複を許容しない。
 ```
 // 以下は許容されない
@@ -161,7 +161,7 @@ a {
 }
 ```
 
-[`"declaration-block-no-redundant-longhand-properties": null`](https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/)
+[`"declaration-block-no-redundant-longhand-properties": null`](https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/)  
 プロパティのロングハンド指定を許容する。
 ```
 // 以下は許容される
@@ -173,25 +173,25 @@ a {
 }
 ```
 
-[`"keyframes-name-pattern": null`](https://stylelint.io/user-guide/rules/list/keyframes-name-pattern/)
+[`"keyframes-name-pattern": null`](https://stylelint.io/user-guide/rules/list/keyframes-name-pattern/)  
 keyframeの命名パターンを制限しない。
 
-[`"selector-class-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-class-pattern/)
+[`"selector-class-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-class-pattern/)  
 classセレクタの命名パターンを制限しない。
 
-[`"selector-id-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-id-pattern/)
+[`"selector-id-pattern": null`](https://stylelint.io/user-guide/rules/list/selector-id-pattern/)  
 idセレクタの命名パターンを制限しない。
 
-[`"scss/at-function-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern)
+[`"scss/at-function-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern)  
 functionの命名パターンを制限しない。
 
-[`"scss/at-mixin-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-mixin-pattern)
+[`"scss/at-mixin-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-mixin-pattern)  
 mixinの命名パターンを制限しない。
 
-[`"scss/dollar-variable-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-pattern)
+[`"scss/dollar-variable-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/dollar-variable-pattern)  
 変数の命名パターンを制限しない。
 
-[`"scss/no-duplicate-dollar-variables": true`](https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables)
+[`"scss/no-duplicate-dollar-variables": true`](https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/no-duplicate-dollar-variables)  
 変数宣言の重複を許容しない。
 ```
 // 以下は許容されない
@@ -199,7 +199,7 @@ $red: red;
 $red: blue;
 ```
 
-[`"scss/percent-placeholder-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/percent-placeholder-pattern)
+[`"scss/percent-placeholder-pattern": null`](https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/percent-placeholder-pattern)  
 `%`-placeholderの命名パターンを制限しない。
 
 #### フォーマッター
