@@ -1,5 +1,5 @@
-# 静的サイトボイラープレート（webpack + EJS + Dart Sass + Babel + Prettier + stylelint + ESLint）
-- 静的サイト制作のためのボイラープレートです
+# Web制作ボイラープレート（webpack + EJS + Dart Sass + Babel + Prettier + stylelint + ESLint）
+- Web制作のためのボイラープレートです
 - Visual Studio CodeとそのプラグインおよびNode.jsを使用します
 - EJS、Dart Sass、JavaScriptの使用を想定しています
 - モジュールバンドラとしてwebpackを使用します
